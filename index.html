@@ -1373,92 +1373,228 @@
             </div>
         </div>
 
-        <!-- User Stories & Flow -->
-        <div class="bg-indigo-50/50 p-8 rounded-[2rem] border border-indigo-100">
-            <h4 class="font-bold text-indigo-700 mb-8 flex items-center text-xl">
-                <span class="mr-3 text-2xl">🛤️</span> User Stories & User Flow
+        <!-- User Stories -->
+        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+            <h4 class="font-bold text-indigo-600 mb-6 flex items-center text-xl">
+                <span class="mr-3 text-2xl">🧾</span> User Stories (validate din interviuri)
             </h4>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-6">
-                    <h5 class="text-sm font-bold text-indigo-600 uppercase tracking-wider mb-4">Nevoi validate</h5>
+            <div class="grid md:grid-cols-2 gap-6 text-sm font-bold text-slate-700">
 
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-indigo-100 relative">
-                        <p class="text-[11px] font-bold text-indigo-400 uppercase mb-2">Încredere la primul pas</p>
-                        <p class="text-sm text-slate-700 leading-relaxed italic font-bold">
-                            "Vreau recomandări explicate, ca să nu simt anxietate că aleg greșit terapeutul."
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-indigo-100 relative">
-                        <p class="text-[11px] font-bold text-indigo-400 uppercase mb-2">Eficiența timpului</p>
-                        <p class="text-sm text-slate-700 leading-relaxed italic font-bold">
-                            "Vreau să trimit un rezumat înainte de ședință ca să nu pierd primele minute pe recapitulări."
-                        </p>
-                    </div>
-
-                    <div class="bg-white p-5 rounded-2xl shadow-sm border border-indigo-100 relative">
-                        <p class="text-[11px] font-bold text-indigo-400 uppercase mb-2">Controlul intimității</p>
-                        <p class="text-sm text-slate-700 leading-relaxed italic font-bold">
-                            "Vreau să aleg ce notițe ajung la terapeut și ce rămâne privat."
-                        </p>
-                    </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p class="text-indigo-700 font-extrabold mb-2">Client</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li>Ca utilizator care nu știe ce tip de terapie i se potrivește, vreau un onboarding ghidat, ca să reduc anxietatea decizională.</li>
+                        <li>Ca utilizator, vreau recomandări explicate (de ce e potrivit terapeutul), ca să am încredere în matching și să nu simt că e “black box”.</li>
+                        <li>Ca utilizator, vreau să văd opțiuni și să pot explora terapeuți (online / oraș), ca să am control asupra alegerii.</li>
+                        <li>Ca utilizator, vreau să îmi programez ușor ședința, ca să nu pierd timp în mesaje / call-uri.</li>
+                    </ul>
                 </div>
 
-                <div class="bg-white p-6 rounded-[2rem] shadow-sm flex flex-col border border-indigo-50">
-                    <h5 class="text-sm font-bold text-slate-800 mb-6">User Flow: de la confuzie la progres</h5>
-
-                    <div class="space-y-4 relative font-bold">
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-extrabold text-sm shadow-md">1</div>
-                            <div>
-                                <p class="font-extrabold text-slate-800 text-sm">Onboarding ghidat</p>
-                                <p class="text-[11px] text-slate-500">Chestionar simplu despre stări și obiective.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-extrabold text-sm shadow-md">2</div>
-                            <div>
-                                <p class="font-extrabold text-slate-800 text-sm">Matching Transparent</p>
-                                <p class="text-[11px] text-slate-500">Top 3 specialiști + explicații clare.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-extrabold text-sm shadow-md">3</div>
-                            <div>
-                                <p class="font-extrabold text-slate-800 text-sm">Programare & pregătire</p>
-                                <p class="text-[11px] text-slate-500">Rezumat înainte de ședință / control asupra notițelor.</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="flex-shrink-0 w-8 h-8 bg-indigo-600 text-white rounded-full flex items-center justify-center font-extrabold text-sm shadow-md">4</div>
-                            <div>
-                                <p class="font-extrabold text-slate-800 text-sm">Terapie continuă</p>
-                                <p class="text-[11px] text-slate-500">Progres mai clar și relație terapeutică mai eficientă.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 pt-6 border-t border-slate-100 italic text-[10px] text-slate-400 font-bold">
-                        *Flux optimizat pentru reducerea anxietății și a numărului de “încercări”.
-                    </div>
+                <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                    <p class="text-indigo-700 font-extrabold mb-2">Terapeut</p>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li>Ca terapeut, vreau să îmi setez disponibilitatea pe zile și intervale, ca să gestionez programările rapid.</li>
+                        <li>Ca terapeut, vreau un calendar centralizat pentru ședințe, ca să evit informații dispersate (telefon + caiet + alte tool-uri).</li>
+                        <li>Ca terapeut, vreau o listă de clienți + profil client, ca să văd rapid contextul și istoricul.</li>
+                        <li>Ca terapeut, vreau să pot adăuga note după ședințe, ca să păstrez informația organizată cronologic.</li>
+                    </ul>
                 </div>
+
             </div>
         </div>
 
-        <!-- Wireframes update reminder -->
-        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
-            <h4 class="font-bold text-indigo-600 mb-4 flex items-center text-xl">
-                <span class="mr-3 text-2xl">🧩</span> Update wireframes (cerință milestone)
+
+        <!-- Use Cases / User Flows -->
+        <div class="bg-indigo-50/50 p-8 rounded-[2rem] border border-indigo-100">
+            <h4 class="font-bold text-indigo-700 mb-6 flex items-center text-xl">
+                <span class="mr-3 text-2xl">🛤️</span> Use Cases / User Flows (cu ecrane reale din aplicație)
             </h4>
-            <p class="text-slate-600 text-sm font-bold leading-relaxed">
-                Wireframes trebuie actualizate ca să reflecte concluziile din interviuri (transparență matching + control intimitate + onboarding ghidat).
-                Dacă ai deja update-ul, pune link la wireframes aici:
+
+            <p class="text-slate-600 text-sm font-bold leading-relaxed mb-6">
+                Mai jos sunt fluxurile principale identificate în interviuri. Pentru fiecare flux, includem ecranele relevante (high-fidelity wireframes).
             </p>
-            <a href="#" class="text-indigo-700 underline font-bold">LINK_WIREFRAMES_UPDATED (TBD)</a>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- FLOW 1: Client matching -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                    <h5 class="text-indigo-700 font-extrabold mb-2">Flow 1 — Client: Onboarding → Matching → Rezultate</h5>
+                    <ol class="list-decimal ml-5 text-sm font-bold text-slate-700 space-y-1">
+                        <li>Client intră în dashboard (punct de start).</li>
+                        <li>Completează pașii de matching (Step 1–4).</li>
+                        <li>Primește lista de terapeuți recomandați (cu “de ce”).</li>
+                    </ol>
+
+                    <div class="grid grid-cols-2 gap-3 mt-4">
+                        <a href="app_ss/client_dashboard.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/client_dashboard.png" class="w-full h-32 object-cover" alt="Client Dashboard">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Client Dashboard</div>
+                        </a>
+
+                        <a href="app_ss/client_matching1.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/client_matching1.png" class="w-full h-32 object-cover" alt="Matching Step 1">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Matching Step 1</div>
+                        </a>
+
+                        <a href="app_ss/clientmatching2.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/clientmatching2.png" class="w-full h-32 object-cover" alt="Matching Step 2">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Matching Step 2</div>
+                        </a>
+
+                        <a href="app_ss/clientmatching6.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/clientmatching6.png" class="w-full h-32 object-cover" alt="Matches list">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Matches list</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FLOW 2: Booking -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                    <h5 class="text-indigo-700 font-extrabold mb-2">Flow 2 — Client: Alege terapeut → Profil → Book session</h5>
+                    <ol class="list-decimal ml-5 text-sm font-bold text-slate-700 space-y-1">
+                        <li>Client vede lista de matches.</li>
+                        <li>Intră în profilul terapeutului.</li>
+                        <li>Programează o ședință.</li>
+                    </ol>
+
+                    <div class="grid grid-cols-2 gap-3 mt-4">
+                        <a href="app_ss/Matches_list.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Matches_list.png" class="w-full h-32 object-cover" alt="Matches List">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Matches List</div>
+                        </a>
+
+                        <a href="app_ss/Therapist_profile(what the client see).png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Therapist_profile(what the client see).png" class="w-full h-32 object-cover" alt="Therapist profile (client view)">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Therapist profile (client view)</div>
+                        </a>
+
+                        <a href="app_ss/Bookin_session.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Bookin_session.png" class="w-full h-32 object-cover" alt="Booking session">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Book session</div>
+                        </a>
+
+                        <a href="app_ss/client_calendar.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/client_calendar.png" class="w-full h-32 object-cover" alt="Client calendar">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Client calendar (după booking)</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FLOW 3: Therapist availability -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                    <h5 class="text-indigo-700 font-extrabold mb-2">Flow 3 — Terapeut: Setează disponibilitate (slots) → Save</h5>
+                    <ol class="list-decimal ml-5 text-sm font-bold text-slate-700 space-y-1">
+                        <li>Terapeut intră în Availability.</li>
+                        <li>Adaugă intervale bookable per zi + copy slots.</li>
+                        <li>Salvează disponibilitatea.</li>
+                    </ol>
+
+                    <div class="grid grid-cols-2 gap-3 mt-4">
+                        <a href="app_ss/Therapist_availability.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Therapist_availability.png" class="w-full h-32 object-cover" alt="Therapist availability">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Availability (add slot)</div>
+                        </a>
+
+                        <a href="app_ss/Therapist_availability2.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Therapist_availability2.png" class="w-full h-32 object-cover" alt="Copy slots">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Copy slots</div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FLOW 4: Therapist clients + notes -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                    <h5 class="text-indigo-700 font-extrabold mb-2">Flow 4 — Terapeut: Clienți → Profil client → Note</h5>
+                    <ol class="list-decimal ml-5 text-sm font-bold text-slate-700 space-y-1">
+                        <li>Terapeut vede lista de clienți (din bookings).</li>
+                        <li>Deschide profilul clientului.</li>
+                        <li>Adaugă note și urmărește timeline.</li>
+                    </ol>
+
+                    <div class="grid grid-cols-2 gap-3 mt-4">
+                        <a href="app_ss/Clients(therapists_see_their_clients).png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Clients(therapists_see_their_clients).png" class="w-full h-32 object-cover" alt="Therapist clients list">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Clients list</div>
+                        </a>
+
+                        <a href="app_ss/Client_profile_viewed_by_therapist.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Client_profile_viewed_by_therapist.png" class="w-full h-32 object-cover" alt="Client profile">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Client profile</div>
+                        </a>
+
+                        <a href="app_ss/Client_notes(by_therapist).png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                            <img src="app_ss/Client_notes(by_therapist).png" class="w-full h-32 object-cover" alt="Client notes">
+                            <div class="p-2 text-[11px] font-bold text-slate-600">Add note + timeline</div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Wireframes updated based on findings -->
+        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+            <h4 class="font-bold text-indigo-600 mb-6 flex items-center text-xl">
+                <span class="mr-3 text-2xl">🧩</span> Update wireframes pe baza insight-urilor (cerință milestone)
+            </h4>
+
+            <div class="text-slate-600 text-sm font-bold leading-relaxed space-y-4">
+                <p>
+                    Pe baza interviurilor, am actualizat structura ecranelor astfel încât să răspundă problemelor identificate:
+                    anxietate decizională, lipsă de claritate în diferențele dintre terapii și nevoia de transparență în matching.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="bg-amber-50 p-4 rounded-2xl border border-amber-100">
+                        <p class="text-amber-800 font-extrabold">Insight</p>
+                        <p class="mt-1">Utilizatorii nu au încredere în “black box matching”.</p>
+                        <p class="text-amber-800 font-extrabold mt-3">Update</p>
+                        <p class="mt-1">Matches afișează “de ce” (topic/stil/compatibilitate).</p>
+                    </div>
+
+                    <div class="bg-indigo-50 p-4 rounded-2xl border border-indigo-100">
+                        <p class="text-indigo-800 font-extrabold">Insight</p>
+                        <p class="mt-1">Primul pas e greu → nevoie de ghidaj clar.</p>
+                        <p class="text-indigo-800 font-extrabold mt-3">Update</p>
+                        <p class="mt-1">Onboarding în pași (Step 1–4) + progres vizibil.</p>
+                    </div>
+
+                    <div class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100">
+                        <p class="text-emerald-800 font-extrabold">Insight</p>
+                        <p class="mt-1">Terapeuții au info dispersată (calendar + notițe).</p>
+                        <p class="text-emerald-800 font-extrabold mt-3">Update</p>
+                        <p class="mt-1">Zona therapist: availability + clients + notes timeline.</p>
+                    </div>
+                </div>
+
+                <p class="pt-2">
+                    Dovezi (wireframes actualizate = capturi din aplicație):
+                </p>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <a href="app_ss/client_matching1.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                        <img src="app_ss/client_matching1.png" class="w-full h-28 object-cover" alt="Matching Step 1">
+                        <div class="p-2 text-[11px] font-bold text-slate-600">Onboarding (Step)</div>
+                    </a>
+
+                    <a href="app_ss/clientmatching6.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                        <img src="app_ss/clientmatching6.png" class="w-full h-28 object-cover" alt="Matches">
+                        <div class="p-2 text-[11px] font-bold text-slate-600">Matches + reasons</div>
+                    </a>
+
+                    <a href="app_ss/Types_Therapy_info.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                        <img src="app_ss/Types_Therapy_info.png" class="w-full h-28 object-cover" alt="Types of therapy">
+                        <div class="p-2 text-[11px] font-bold text-slate-600">Educare: tipuri</div>
+                    </a>
+
+                    <a href="app_ss/Therapist_availability.png" target="_blank" class="block rounded-xl overflow-hidden border border-slate-100 hover:shadow-md transition-shadow">
+                        <img src="app_ss/Therapist_availability.png" class="w-full h-28 object-cover" alt="Therapist availability">
+                        <div class="p-2 text-[11px] font-bold text-slate-600">Therapist tools</div>
+                    </a>
+                </div>
+            </div>
         </div>
 
     </section>
