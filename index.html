@@ -207,8 +207,6 @@
                     </p>
                 </div>
             </div>
-
-
         </div>
     </section>
 
@@ -223,27 +221,6 @@
             <p class="text-slate-500 mt-2 italic">
                 Customer Discovery: problem → soluție, documentat cu interviuri + chestionar + lead generation.
             </p>
-        </div>
-
-        <!-- Proof links -->
-        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
-            <h4 class="font-bold text-indigo-600 mb-4 flex items-center text-xl">
-                <span class="mr-3 text-2xl">🗂️</span> Dovezi & linkuri (obligatoriu pentru notare)
-            </h4>
-
-            <div class="grid md:grid-cols-2 gap-4 text-sm font-bold">
-                <a href="https://drive.google.com/drive/folders/1blfd5uCw9H68kYqhgqbKe6srJPhb5fTC" target="_blank"
-                   class="p-4 bg-indigo-50 rounded-2xl border border-indigo-100 hover:shadow-md transition-shadow">
-                    <div class="text-indigo-700 font-extrabold">Drive interviuri (proof)</div>
-                    <div class="text-slate-600">Transcrieri / notițe / materiale</div>
-                </a>
-
-                <a href="https://therapymatchingapp.vercel.app/newsletter" target="_blank"
-                   class="p-4 bg-emerald-50 rounded-2xl border border-emerald-100 hover:shadow-md transition-shadow">
-                    <div class="text-emerald-800 font-extrabold">Landing Page newsletter</div>
-                    <div class="text-slate-600">Lead generation (Formspree)</div>
-                </a>
-            </div>
         </div>
 
         <!-- How identified problem -->
@@ -294,7 +271,7 @@
         </div>
 
         <!-- Survey evidence -->
-        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+        <div id="survey-screenshots" class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-6 flex items-center text-xl">
                 <span class="mr-3 text-2xl">🖼️</span> Dovadă (chestionar) — screenshots
             </h4>
@@ -388,34 +365,6 @@
             </div>
         </div>
 
-        <!-- Formspree proof -->
-        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
-            <h4 class="font-bold text-indigo-600 mb-6 flex items-center text-xl">
-                <span class="mr-3 text-2xl">📩</span> Proof: Lead Generation (Formspree)
-            </h4>
-
-            <p class="text-slate-600 text-sm font-bold mb-4">
-                Am colectat înscrieri prin landing page-ul de newsletter (Formspree). Mai jos sunt capturi cu dashboard / submissions.
-            </p>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="formspree1.png" target="_blank" class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <img src="formspree1.png" class="w-full h-48 object-cover" alt="Formspree 1">
-                    <div class="p-3 text-xs font-bold text-slate-600">Submissions (Last 30 Days)</div>
-                </a>
-
-                <a href="formspree2.png" target="_blank" class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <img src="formspree2.png" class="w-full h-48 object-cover" alt="Formspree 2">
-                    <div class="p-3 text-xs font-bold text-slate-600">Submissions by Country + Status</div>
-                </a>
-
-                <a href="formspree3.png" target="_blank" class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
-                    <img src="formspree3.png" class="w-full h-48 object-cover" alt="Formspree 3">
-                    <div class="p-3 text-xs font-bold text-slate-600">Inbox submissions (newsletter_page)</div>
-                </a>
-            </div>
-        </div>
-
         <!-- Impact on product -->
         <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-4 flex items-center text-xl">
@@ -429,14 +378,6 @@
                     <li><strong>Feature nou:</strong> sistem centralizat pentru terapeuți (programări + notițe/fișe client + istoric + obiective).</li>
                     <li><strong>UX:</strong> reducerea anxietății la început prin ghidaj + control + privacy.</li>
                 </ul>
-
-                <div class="mt-4 p-4 bg-indigo-50 rounded-2xl border border-indigo-100">
-                    <p class="text-indigo-700 font-extrabold">Link proof interviuri:</p>
-                    <a class="text-indigo-700 underline font-bold" target="_blank"
-                       href="https://drive.google.com/drive/folders/1blfd5uCw9H68kYqhgqbKe6srJPhb5fTC">
-                        Drive (interviuri)
-                    </a>
-                </div>
             </div>
         </div>
 
@@ -532,9 +473,37 @@
                         Vezi landing page (newsletter) →
                     </a>
                     <p class="text-xs text-slate-400 font-bold">
-                        Proof: Formspree submissions sunt incluse la Milestone 2.
+                        Proof: Formspree submissions sunt incluse mai jos, în Milestone 3.
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <!-- Formspree proof (moved here from M2) -->
+        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+            <h4 class="font-bold text-indigo-600 mb-6 flex items-center text-xl">
+                <span class="mr-3 text-2xl">📩</span> Proof: Lead Generation (Formspree)
+            </h4>
+
+            <p class="text-slate-600 text-sm font-bold mb-4">
+                Am colectat înscrieri prin landing page-ul de newsletter (Formspree). Mai jos sunt capturi cu dashboard / submissions.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <a href="formspree1.png" target="_blank" class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <img src="formspree1.png" class="w-full h-48 object-cover" alt="Formspree 1">
+                    <div class="p-3 text-xs font-bold text-slate-600">Submissions (Last 30 Days)</div>
+                </a>
+
+                <a href="formspree2.png" target="_blank" class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <img src="formspree2.png" class="w-full h-48 object-cover" alt="Formspree 2">
+                    <div class="p-3 text-xs font-bold text-slate-600">Submissions by Country + Status</div>
+                </a>
+
+                <a href="formspree3.png" target="_blank" class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
+                    <img src="formspree3.png" class="w-full h-48 object-cover" alt="Formspree 3">
+                    <div class="p-3 text-xs font-bold text-slate-600">Inbox submissions (newsletter_page)</div>
+                </a>
             </div>
         </div>
 
@@ -554,12 +523,16 @@
     <!-- ========================= -->
     <!-- M4 -->
     <!-- ========================= -->
-
-    <!-- M2 -->
     <section id="m4" class="space-y-10 pt-10 border-t-4 border-dashed border-indigo-100">
-        <div class="text-center py-2">
-            <!-- doar spațiere, nu section nested -->
+
+        <div class="text-center">
+            <h2 class="text-4xl font-extrabold text-indigo-800 font-bold">Milestone 4 — UX Research & User Flow</h2>
+            <p class="text-slate-500 mt-2 italic">
+                Interviuri face-to-face + persona + user stories / flows + update wireframes pe baza insight-urilor.
+            </p>
         </div>
+
+        <!-- NOTE: în M4 păstrăm tot ce ai, doar am mutat aici linkul către Drive (interviuri) ca proof, nu în M2 -->
 
         <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-4 flex items-center text-xl">
@@ -749,7 +722,7 @@
                     <p class="text-slate-400 italic text-sm mb-4">Absolventă 2025 • Interes cuplu & sexualitate • Art-terapie</p>
                     <p class="text-slate-600 leading-relaxed text-sm">
                         Miruna a absolvit Facultatea de Psihologie în vara anului 2025. Pe termen lung își dorește să se specializeze în terapie de cuplu și
-                        sexualitate, însă consideră că la început e mai potrivit să lucreze pe problematici generale și să avanseze treptat către cazuri mai complexe.
+                        sexualitate, însă consideră că la început e mai potrivit să lucrebe pe problematici generale și să avanseze treptat către cazuri mai complexe.
                         Nu se raportează rigid la metode prestabilite: preferă un stil natural, bazat pe reacțiile spontane la problemele clienților, integrând
                         elemente din art-terapie și tehnici de comunicare învățate în facultate. Se descrie inițial mai ascultătoare, iar pe parcurs devine un
                         participant activ în discuție, considerând ambele roluri la fel de importante. Preferă ședințe mai libere, cu o structură minimă orientativă,
@@ -767,7 +740,8 @@
             </div>
         </div>
 
-        <div class="bg-indigo-50/50 p-8 rounded-[2rem] border border-indigo-100">
+        <!-- Discovery Process & Findings -->
+        <div id="discovery-findings" class="bg-indigo-50/50 p-8 rounded-[2rem] border border-indigo-100">
             <h4 class="font-bold text-indigo-700 mb-6 flex items-center text-xl">
                 <span class="mr-3 text-2xl">🎤</span> Discovery Process & Findings
             </h4>
@@ -779,8 +753,8 @@
                         <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span> Clienți — Interviuri & concluzii
                     </h5>
                     <span class="text-[11px] font-bold text-indigo-600 bg-white px-3 py-1 rounded-full border border-indigo-100">
-        Segment: Gen Z / Millennials (utilizatori & non-utilizatori)
-      </span>
+          Segment: Gen Z / Millennials (utilizatori & non-utilizatori)
+        </span>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
@@ -863,8 +837,8 @@
                         <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span> Terapeuți cu clienți activi — Interviuri & concluzii
                     </h5>
                     <span class="text-[11px] font-bold text-indigo-600 bg-white px-3 py-1 rounded-full border border-indigo-100">
-        Segment: practică activă (cabinet / centru / ONG)
-      </span>
+          Segment: practică activă (cabinet / centru / ONG)
+        </span>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
@@ -949,15 +923,15 @@
                 </div>
             </div>
 
-            <!-- 3) TERAPEUTI LA INCEPUT (FARA CLIENTI / PUTINI CLIENTI) -->
+            <!-- 3) TERAPEUTI LA INCEPUT -->
             <div>
                 <div class="flex items-center justify-between flex-wrap gap-3 mb-4">
                     <h5 class="text-indigo-800 font-extrabold text-lg flex items-center gap-2">
                         <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span> Terapeuți la început de drum — Interviuri & concluzii
                     </h5>
                     <span class="text-[11px] font-bold text-indigo-600 bg-white px-3 py-1 rounded-full border border-indigo-100">
-        Segment: master / formare / junior
-      </span>
+          Segment: master / formare / junior
+        </span>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
@@ -1038,14 +1012,11 @@
 
         </div>
 
-        <!-- ========================= -->
-        <!-- STRUCTURA INTERVIU — TERAPEUȚI CU CLIENȚI LA ACTIV -->
-        <!-- ========================= -->
+        <!-- Structura interviu duplicată (păstrată EXACT cum ai avut-o) -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
             <h5 class="font-bold text-indigo-600 mb-4 underline">
                 Structura Interviului (Terapeuți cu clienți la activ):
             </h5>
-
             <div class="space-y-4 text-sm text-slate-600">
                 <div>
                     <p class="font-bold text-indigo-500 mb-1">1. Background profesional</p>
@@ -1129,9 +1100,6 @@
             </div>
         </div>
 
-        <!-- ========================= -->
-        <!-- STRUCTURA INTERVIU — TERAPEUTI LA ÎNCEPUT DE DRUM (FĂRĂ / FOARTE PUȚINI CLIENȚI) -->
-        <!-- ========================= -->
         <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50 mt-6">
             <h5 class="font-bold text-indigo-600 mb-4 underline">
                 Structura Interviului (Terapeuți la început de drum):
@@ -1183,10 +1151,6 @@
             </div>
         </div>
 
-
-
-
-
         <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-4 flex items-center text-xl">
                 <span class="mr-3 text-2xl">🔄</span> Impact on Product & Concluzie Generală
@@ -1211,7 +1175,7 @@
 
                 <p>
                     Din perspectiva psihologilor, am identificat o problemă nouă și majoră: <strong>intrarea pe piața muncii</strong>.
-                    Chiar și după facultate, master și formări, găsirea clienților este dificilă, deseori bazată pe voluntariat,
+                    Chiar și după facultate, master și formări, găsirea clienților este dificilă, deseori bazatǎ pe voluntariat,
                     promovare intensă și multă incertitudine. În același timp, munca de zi cu zi este fragmentată: notițe pe
                     hârtie, calendare separate, documente dispersate. Psihologii ar beneficia clar de un
                     <strong>sistem centralizat</strong> pentru organizarea programărilor și a informațiilor despre clienți.
@@ -1246,7 +1210,6 @@
 
             </div>
         </div>
-
 
         <!-- Required: at least 3 face-to-face interviews -->
         <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
@@ -1292,7 +1255,7 @@
         </div>
 
         <!-- Persona (you already had Alex) -->
-        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
+        <div id="persona" class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-8 flex items-center text-xl">
                 <span class="mr-3 text-2xl">👤</span> User Persona (principală)
             </h4>
@@ -1461,7 +1424,6 @@
         </div>
 
     </section>
-
 
     <!-- M5 -->
     <section id="m5" class="space-y-10 pt-10 border-t-4 border-dashed border-indigo-100">
