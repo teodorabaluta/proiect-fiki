@@ -369,40 +369,184 @@
     </section>
 
     <!-- M4 -->
-    <section id="m4" class="space-y-10 pt-10 border-t-4 border-dashed border-indigo-100">
-        <div class="text-center">
-            <h2 class="text-4xl font-extrabold text-indigo-800">UX Research & User Flow</h2>
-            <p class="text-slate-500 mt-2 italic">Rafinarea experienței utilizatorului pe baza interviurilor calitative și a nevoilor de control.</p>
-        </div>
 
-        <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
-                <h4 class="font-bold text-indigo-600 flex items-center text-xl">
-                    <span class="mr-3 text-2xl">🎤</span> 1. Validare prin Interviuri
-                </h4>
+    <div class="bg-indigo-50/50 p-8 rounded-[2rem] border border-indigo-100">
+        <h4 class="font-bold text-indigo-700 mb-6 flex items-center text-xl">
+            <span class="mr-3 text-2xl">🎤</span> Discovery Process & Findings
+        </h4>
 
-                <!-- placeholder fix: nu mai dă warning ca file; înlocuiește cu link real când ai -->
-                <a href="#" onclick="return false;"
-                   class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-xs font-bold hover:bg-indigo-200 transition-all">
-                    Vezi Interviurile Complete →
-                </a>
-            </div>
+        <div class="grid md:grid-cols-2 gap-8">
 
-            <div class="text-slate-600 text-sm leading-relaxed space-y-4 font-bold">
-                <p>Am testat ipotezele noastre cu utilizatori reali pentru a înțelege barierele emoționale și tehnice. Concluziile UX extrase sunt:</p>
-                <ul class="grid md:grid-cols-3 gap-4">
-                    <li class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <strong>Transparență vs. "Black Box":</strong> Utilizatorii au nevoie să înțeleagă criteriile de matching. O recomandare neexplicată scade încrederea în platformă.
-                    </li>
-                    <li class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <strong>Anxietate Decizională:</strong> Pentru cei la primul pas, matching-ul trebuie să fie un ghid, oferind siguranță, nu doar o listă de nume.
-                    </li>
-                    <li class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <strong>Controlul Intimității:</strong> Utilizatorii doresc să selecteze manual ce notițe din jurnal sunt vizibile terapeutului și ce rămâne privat.
-                    </li>
+            <!-- ================= CLIENTI ================= -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Structura Interviului – Clienți</h5>
+                <ul class="text-sm text-slate-600 space-y-2 list-disc ml-5">
+                    <li>Istoricul de căutare</li>
+                    <li>Claritate & încredere</li>
+                    <li>Experiența ședințelor</li>
+                    <li>Bariere și alternative</li>
                 </ul>
             </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Rezultate Cheie – Clienți</h5>
+                <div class="text-sm text-slate-600 space-y-3">
+                    <p><strong>Barieră critică:</strong> Primul pas este perceput ca fiind cel mai dificil din cauza lipsei de ghidaj.</p>
+                    <p><strong>Ineficiență:</strong> Căutarea este manuală, obositoare și nesigură.</p>
+                    <p><strong>Nevoie:</strong> Compatibilitatea de stil și personalitate este mai importantă decât specializarea.</p>
+                    <p><strong>Condiție:</strong> Matching-ul trebuie să fie explicabil, nu „black box”.</p>
+                    <p><strong>AI:</strong> Acceptat doar ca suport pentru terapia umană.</p>
+                </div>
+            </div>
+
+            <!-- ================= PSIHOLOGI CU CLIENTI ================= -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Structura Interviului – Psihologi cu clienți</h5>
+                <ul class="text-sm text-slate-600 space-y-1 list-disc ml-5">
+                    <li>Background profesional</li>
+                    <li>Atragerea clienților</li>
+                    <li>Structura primei ședințe</li>
+                    <li>Informații utile despre client</li>
+                    <li>Stil terapeutic & compatibilitate</li>
+                    <li>Instrumente digitale</li>
+                    <li>Eficiență și scalabilitate</li>
+                    <li>Dorință de îmbunătățire</li>
+                    <li>Provocări la început de drum</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Rezultate Cheie – Psihologi cu clienți</h5>
+                <div class="text-sm text-slate-600 space-y-3">
+                    <p><strong>Ineficiență:</strong> Lipsa unui sistem centralizat de lucru.</p>
+                    <p><strong>Dorință:</strong> Compatibilitatea terapeut–client reduce abandonul.</p>
+                    <p><strong>Presiune:</strong> Prima ședință este consumatoare de timp și emoțională.</p>
+                    <p><strong>Oportunitate:</strong> Pre-colectarea informațiilor despre client.</p>
+                </div>
+            </div>
+
+            <!-- ================= PSIHOLOGI FARA CLIENTI ================= -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Structura Interviului – Psihologi la început de drum</h5>
+                <ul class="text-sm text-slate-600 space-y-1 list-disc ml-5">
+                    <li>Direcție profesională</li>
+                    <li>Stil personal</li>
+                    <li>Intrarea în profesie</li>
+                    <li>Pregătirea pentru client</li>
+                    <li>Matching & platforme</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Rezultate Cheie – Psihologi la început de drum</h5>
+                <div class="text-sm text-slate-600 space-y-3">
+                    <p><strong>Barieră critică:</strong> Acces extrem de dificil la clienți.</p>
+                    <p><strong>Presiune emoțională:</strong> Nesiguranță profesională.</p>
+                    <p><strong>Nevoie:</strong> Ghidare administrativă și profesională.</p>
+                    <p><strong>Motivație:</strong> Compatibilitatea este mai importantă decât volumul de clienți.</p>
+                </div>
+            </div>
+
         </div>
+    </div>
+
+
+    <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 mt-10">
+        <h4 class="font-bold text-indigo-600 mb-4 text-xl">Interviuri Psihologi</h4>
+
+        <p class="text-slate-600 text-sm leading-relaxed mb-3"><strong>Anghel Vlad</strong> – student master CBT, formare integrativă. Prima ședință este centrată pe anamneză, motivație și relație. Își notează informațiile manual, dar își dorește mai multă structură digitală.</p>
+
+        <p class="text-slate-600 text-sm leading-relaxed mb-3"><strong>Papa Cocea Ioana</strong> – interesată de CBT, Gestalt și terapie somatică. Preferă clienți compatibili și simte lipsa ghidării profesionale.</p>
+
+        <p class="text-slate-600 text-sm leading-relaxed mb-3"><strong>Timeea</strong> – psiholog cu cabinet propriu, lucrează cu copii TSA. Prima ședință este orientată spre relație. Consideră că lipsa clienților este una dintre cele mai mari dificultăți.</p>
+
+        <p class="text-slate-600 text-sm leading-relaxed"><strong>Miruna Bodea</strong> – preferă stil natural, liber, dar adaptabil. Resimte lipsa ghidării administrative și își dorește clienți compatibili pentru a-și construi încrederea.</p>
+    </div>
+
+
+
+
+
+    <div class="bg-indigo-50/50 p-8 rounded-[2rem] border border-indigo-100">
+        <h4 class="font-bold text-indigo-700 mb-6 flex items-center text-xl">
+            <span class="mr-3 text-2xl">🎤</span> Discovery Process & Findings
+        </h4>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- ================= CLIENTI ================= -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Structura Interviului – Clienți</h5>
+                <ul class="text-sm text-slate-600 space-y-2 list-disc ml-5">
+                    <li>Istoricul de căutare</li>
+                    <li>Claritate & încredere</li>
+                    <li>Experiența ședințelor</li>
+                    <li>Bariere și alternative</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Rezultate Cheie – Clienți</h5>
+                <div class="text-sm text-slate-600 space-y-3">
+                    <p><strong>Barieră critică:</strong> Primul pas este perceput ca fiind cel mai dificil din cauza lipsei de ghidaj.</p>
+                    <p><strong>Ineficiență:</strong> Căutarea este manuală, obositoare și nesigură.</p>
+                    <p><strong>Nevoie:</strong> Compatibilitatea de stil și personalitate este mai importantă decât specializarea.</p>
+                    <p><strong>Condiție:</strong> Matching-ul trebuie să fie explicabil, nu „black box”.</p>
+                    <p><strong>AI:</strong> Acceptat doar ca suport pentru terapia umană.</p>
+                </div>
+            </div>
+
+            <!-- ================= PSIHOLOGI CU CLIENTI ================= -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Structura Interviului – Psihologi cu clienți</h5>
+                <ul class="text-sm text-slate-600 space-y-1 list-disc ml-5">
+                    <li>Background profesional</li>
+                    <li>Atragerea clienților</li>
+                    <li>Structura primei ședințe</li>
+                    <li>Informații utile despre client</li>
+                    <li>Stil terapeutic & compatibilitate</li>
+                    <li>Instrumente digitale</li>
+                    <li>Eficiență și scalabilitate</li>
+                    <li>Dorință de îmbunătățire</li>
+                    <li>Provocări la început de drum</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Rezultate Cheie – Psihologi cu clienți</h5>
+                <div class="text-sm text-slate-600 space-y-3">
+                    <p><strong>Ineficiență:</strong> Lipsa unui sistem centralizat de lucru.</p>
+                    <p><strong>Dorință:</strong> Compatibilitatea terapeut–client reduce abandonul.</p>
+                    <p><strong>Presiune:</strong> Prima ședință este consumatoare de timp și emoțională.</p>
+                    <p><strong>Oportunitate:</strong> Pre-colectarea informațiilor despre client.</p>
+                </div>
+            </div>
+
+            <!-- ================= PSIHOLOGI FARA CLIENTI ================= -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Structura Interviului – Psihologi la început de drum</h5>
+                <ul class="text-sm text-slate-600 space-y-1 list-disc ml-5">
+                    <li>Direcție profesională</li>
+                    <li>Stil personal</li>
+                    <li>Intrarea în profesie</li>
+                    <li>Pregătirea pentru client</li>
+                    <li>Matching & platforme</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50">
+                <h5 class="font-bold text-indigo-600 mb-4 underline">Rezultate Cheie – Psihologi la început de drum</h5>
+                <div class="text-sm text-slate-600 space-y-3">
+                    <p><strong>Barieră critică:</strong> Acces extrem de dificil la clienți.</p>
+                    <p><strong>Presiune emoțională:</strong> Nesiguranță profesională.</p>
+                    <p><strong>Nevoie:</strong> Ghidare administrativă și profesională.</p>
+                    <p><strong>Motivație:</strong> Compatibilitatea este mai importantă decât volumul de clienți.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
         <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-8 flex items-center text-xl">
