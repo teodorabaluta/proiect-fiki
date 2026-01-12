@@ -1721,9 +1721,9 @@
     <section id="m5" class="space-y-10 pt-10 border-t-4 border-dashed border-indigo-100">
 
         <div class="text-center">
-            <h2 class="text-4xl font-extrabold text-indigo-800 font-bold">Milestone 5 — Lead Generation &amp; Collection</h2>
+            <h2 class="text-4xl font-extrabold text-indigo-800 font-bold">Milestone 5 — Lead Generation & Collection</h2>
             <p class="text-slate-500 mt-2 italic">
-                Lead collection (newsletter) + analytics (PostHog: web, funnel, session replay) + campanie de distribuție (Facebook / Reddit / WhatsApp).
+                Lead collection (newsletter) + analytics (PostHog) + campanie de distribuție (Facebook / Reddit / outreach).
             </p>
         </div>
 
@@ -1735,24 +1735,20 @@
 
             <div class="text-slate-600 text-sm font-bold leading-relaxed space-y-4">
                 <p>
-                    Am adăugat pe landing page o secțiune de <span class="text-indigo-700">newsletter</span> pentru a colecta lead-uri (email)
-                    și a valida interesul inițial pentru produs. Colectarea este făcută prin <span class="text-indigo-700">Formspree</span>
-                    (submissions → inbox).
+                    Am adăugat pe landing page o secțiune de newsletter pentru a colecta lead-uri (email) și a valida interesul
+                    pentru lansare. Submisia este gestionată prin <strong>Formspree</strong> (rapid, fără backend suplimentar).
                 </p>
 
                 <div class="p-4 bg-indigo-50 rounded-2xl border border-indigo-100">
-                    <p class="text-indigo-800 font-extrabold">Landing page (lead capture):</p>
-                    <a
-                            href="https://therapymatchingapp.vercel.app/newsletter"
-                            target="_blank"
-                            class="text-indigo-700 underline font-extrabold"
-                    >
+                    <p class="text-indigo-800 font-extrabold">Landing page (newsletter):</p>
+                    <a href="https://therapymatchingapp.vercel.app/newsletter" target="_blank"
+                       class="text-indigo-700 underline font-extrabold">
                         therapymatchingapp.vercel.app/newsletter →
                     </a>
                 </div>
 
                 <p class="text-slate-600 text-sm font-bold">
-                    Proof: capturi Formspree (overview / status / inbox submissions).
+                    Proof: capturi din Formspree (submissions / status / inbox).
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -1765,7 +1761,7 @@
                     <a href="formspree2.png" target="_blank"
                        class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
                         <img src="formspree2.png" class="w-full h-48 object-cover" alt="Formspree 2">
-                        <div class="p-3 text-xs font-bold text-slate-600">Formspree — Status / Breakdown</div>
+                        <div class="p-3 text-xs font-bold text-slate-600">Formspree — Status / breakdown</div>
                     </a>
 
                     <a href="formspree3.png" target="_blank"
@@ -1780,56 +1776,48 @@
         <!-- 2) Analytics -->
         <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-6 flex items-center text-xl">
-                <span class="mr-3 text-2xl">📈</span> Analytics: Web + Funnel + Session Replay (PostHog)
+                <span class="mr-3 text-2xl">📈</span> Analytics: PostHog (Pageviews + Funnels)
             </h4>
 
             <div class="text-slate-600 text-sm font-bold leading-relaxed space-y-4">
                 <p>
-                    Am instrumentat landing page-ul cu <span class="text-indigo-700">PostHog</span> pentru:
-                    <strong>(1)</strong> Web analytics (vizitatori / pageviews),
-                    <strong>(2)</strong> Product analytics (funnel pe Call-To-Action / newsletter),
-                    <strong>(3)</strong> Session replay (observarea comportamentului real în pagină).
+                    Am integrat <strong>PostHog</strong> pentru analytics, ca să putem urmări atât comportamentul pe produs, cât și
+                    conversia pe CTA. În MVP urmărim:
+                    <strong>(1)</strong> pageviews (<code>$pageview</code>),
+                    <strong>(2)</strong> funnel-uri (conversii pe acțiuni cheie),
+                    <strong>(3)</strong> utilizare efectivă (click-uri în dashboard / rezultate matching / booking).
                 </p>
-
-                <div class="p-4 bg-indigo-50 rounded-2xl border border-indigo-100 space-y-2">
-                    <p class="text-indigo-800 font-extrabold">Ce urmărim concret:</p>
-                    <ul class="list-disc ml-6 space-y-1">
-                        <li><span class="font-extrabold">Web analytics:</span> câți vizitatori ajung pe landing page / newsletter.</li>
-                        <li><span class="font-extrabold">Funnel CTA:</span> Landing view → click CTA newsletter → submit email.</li>
-                        <li><span class="font-extrabold">Session replay:</span> unde se blochează utilizatorul / ce ignoră / ce citește.</li>
-                    </ul>
-                </div>
-
-                <p class="text-slate-600 text-sm font-bold">
-                    Proof: capturi din PostHog (web analytics, funnel, session replay).
-                </p>
-
-                <!-- IMPORTANT: pune aici exact numele fișierelor tale PostHog pentru landing -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <a href="posthog_landing_web.png" target="_blank"
-                       class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
-                        <img src="posthog_landing_web.png" class="w-full h-48 object-cover" alt="PostHog web analytics">
-                        <div class="p-3 text-xs font-bold text-slate-600">PostHog — Web analytics (pageviews / visitors)</div>
-                    </a>
-
-                    <a href="posthog_landing_funnel.png" target="_blank"
-                       class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
-                        <img src="posthog_landing_funnel.png" class="w-full h-48 object-cover" alt="PostHog funnel">
-                        <div class="p-3 text-xs font-bold text-slate-600">PostHog — Funnel (CTA → newsletter submit)</div>
-                    </a>
-
-                    <a href="posthog_landing_replay.png" target="_blank"
-                       class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
-                        <img src="posthog_landing_replay.png" class="w-full h-48 object-cover" alt="PostHog session replay">
-                        <div class="p-3 text-xs font-bold text-slate-600">PostHog — Session replay (user behavior)</div>
-                    </a>
-                </div>
 
                 <div class="p-4 bg-amber-50 rounded-2xl border border-amber-100">
-                    <p class="text-amber-800 font-extrabold">Notă:</p>
-                    <p class="text-slate-700 text-xs font-bold mt-1">
-                        Dacă fișierele PostHog au alt nume în repo, schimbă doar <code>src=</code> și <code>href=</code> de mai sus
-                        cu numele reale ale imaginilor tale.
+                    <p class="text-amber-900 font-extrabold mb-2">Ce măsurăm concret (exemple):</p>
+                    <ul class="list-disc ml-6 space-y-1 text-slate-700 text-xs font-bold">
+                        <li><strong>Client funnel</strong>: intrare în dashboard → click „Find match” → results viewed → „Book”</li>
+                        <li><strong>Therapist funnel</strong>: dashboard loaded → dashboard viewed → click în dashboard → deschidere client</li>
+                    </ul>
+                    <p class="text-slate-700 text-xs font-bold mt-3">
+                        Capturile de mai jos sunt dovezi din PostHog că traficul adus pe landing / produs duce la interacțiuni reale în MVP.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="posthog_clienti.jpeg" target="_blank"
+                       class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
+                        <img src="posthog_clienti.jpeg" class="w-full object-cover" alt="PostHog funnel clienti">
+                        <div class="p-3 text-xs font-bold text-slate-600">PostHog — Funnel clienți (dashboard → matching → booking)</div>
+                    </a>
+
+                    <a href="terapeuti_posthog.jpeg" target="_blank"
+                       class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
+                        <img src="terapeuti_posthog.jpeg" class="w-full object-cover" alt="PostHog funnel terapeuti">
+                        <div class="p-3 text-xs font-bold text-slate-600">PostHog — Funnel terapeuți (dashboard usage)</div>
+                    </a>
+                </div>
+
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <p class="font-extrabold text-slate-700">Notă:</p>
+                    <p class="text-xs font-bold text-slate-600 mt-1">
+                        Pentru milestone-ul M5, scopul analytics este să arătăm că avem un sistem de măsurare activ:
+                        trafic → acțiuni → conversii pe CTA (ex. matching / booking). Lead collection rămâne pe Formspree (email).
                     </p>
                 </div>
             </div>
@@ -1838,62 +1826,51 @@
         <!-- 3) Bring traffic -->
         <div class="bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100">
             <h4 class="font-bold text-indigo-600 mb-6 flex items-center text-xl">
-                <span class="mr-3 text-2xl">📣</span> Bring people to landing page: Facebook + Reddit + WhatsApp outreach
+                <span class="mr-3 text-2xl">📣</span> Bring people to landing page: Reddit + Facebook + outreach direct
             </h4>
 
             <div class="text-slate-600 text-sm font-bold leading-relaxed space-y-5">
                 <p>
-                    Pentru a aduce trafic pe landing page, am rulat o campanie de distribuție pe canale diferite:
-                    <span class="text-indigo-700">Facebook</span> (grupuri), <span class="text-indigo-700">Reddit</span> (comunități relevante)
-                    și <span class="text-indigo-700">WhatsApp outreach</span> (mesaje directe către grupuri țintite).
+                    Pentru distribuție (lead generation), am testat canale publice (Reddit, Facebook) și distribuție directă către audiențe relevante.
+                    Obiectivul a fost să aducem trafic către landing page și să colectăm email-uri în newsletter.
                 </p>
-
-                <div class="p-4 bg-indigo-50 rounded-2xl border border-indigo-100">
-                    <p class="text-indigo-800 font-extrabold mb-2">Permalinks (dovadă publică):</p>
-                    <ul class="list-disc ml-6 space-y-1">
-                        <li>
-                            Reddit post:
-                            <a class="underline text-indigo-700 font-extrabold" target="_blank"
-                               href="https://www.reddit.com/r/therapy/comments/1q86k6b/therapy_matching_application/?share_id=iNCR0kb1VBLn1Pc_jNhtw&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=3">
-                                link →
-                            </a>
-                        </li>
-                        <li>
-                            Facebook share (newsletter link):
-                            <a class="underline text-indigo-700 font-extrabold" target="_blank"
-                               href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftherapymatchingapp.vercel.app%2Fnewsletter&h=AT0hUU2ZiURGdh8xus6KGYebt1KglE1SDIY76z3XOHTpwdh5x7vIXz5oz9TY4U8RCrvxKAsTuO76YxcM2GQtYw96HZ3I01YUd-V7dYC9zqsziWH_xuWeUoDxCgzISkhOuq8_tvg0Zo_Q1TLMsg&s=1">
-                                link →
-                            </a>
-                        </li>
-                    </ul>
-                </div>
 
                 <div class="grid md:grid-cols-3 gap-4">
                     <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <p class="text-indigo-700 font-extrabold mb-1">Facebook (grupuri)</p>
+                        <p class="text-indigo-700 font-extrabold mb-1">Facebook (share către landing)</p>
                         <p class="text-slate-600 text-xs font-bold">
-                            Reach mare teoretic, însă o parte din postări au fost limitate de moderare (topic sensibil: mental health).
-                            Bun pentru awareness, dar cu fricțiune.
+                            Distribuire către audiență existentă / grupuri. Unele postări pot avea fricțiune din moderare (subiect sensibil).
                         </p>
+                        <a class="underline text-indigo-700 text-xs font-extrabold"
+                           target="_blank"
+                           href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftherapymatchingapp.vercel.app%2Fnewsletter&h=AT0hUU2ZiURGdh8xus6KGYebt1KglE1SDIY76z3XOHTpwdh5x7vIXz5oz9TY4U8RCrvxKAsTuO76YxcM2GQtYw96HZ3I01YUd-V7dYC9zqsziWH_xuWeUoDxCgzISkhOuq8_tvg0Zo_Q1TLMsg&s=1">
+                            Permalink / redirect Facebook →
+                        </a>
                     </div>
 
                     <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <p class="text-indigo-700 font-extrabold mb-1">Reddit</p>
+                        <p class="text-indigo-700 font-extrabold mb-1">Reddit (feedback + trafic)</p>
                         <p class="text-slate-600 text-xs font-bold">
-                            Canal bun pentru validare și feedback. Comunitățile sunt mai permisive cu proiecte MVP și discuții.
+                            Postare într-o comunitate relevantă pentru a obține feedback și click-uri către produs/landing.
                         </p>
+                        <a class="underline text-indigo-700 text-xs font-extrabold"
+                           target="_blank"
+                           href="https://www.reddit.com/r/therapy/comments/1q86k6b/therapy_matching_application/?share_id=iNCR0kb1VBLn1Pc_jNhtw&utm_content=2&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=3">
+                            Permalink Reddit →
+                        </a>
                     </div>
 
                     <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                        <p class="text-indigo-700 font-extrabold mb-1">WhatsApp (outreach direct)</p>
+                        <p class="text-indigo-700 font-extrabold mb-1">Outreach direct</p>
                         <p class="text-slate-600 text-xs font-bold">
-                            Cel mai targetat canal pentru supply-side (terapeuți) – răspuns mai rapid și conversii mai clare în discuții.
+                            Distribuire către persoane țintite (ex. interesate de terapie / studenți / psihologi la început de drum),
+                            pentru trafic mai calificat.
                         </p>
                     </div>
                 </div>
 
                 <p class="text-slate-600 text-sm font-bold">
-                    Proof: capturi cu postările / distribuția (screenshots).
+                    Proof: capturi cu postările / distribuția (cu context).
                 </p>
 
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -1918,7 +1895,7 @@
                     <a href="reedit1.jpeg" target="_blank"
                        class="block bg-slate-50 rounded-2xl border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
                         <img src="reedit1.jpeg" class="w-full h-40 object-cover" alt="Reddit post 2">
-                        <div class="p-3 text-xs font-bold text-slate-600">Reddit — dovadă link / context</div>
+                        <div class="p-3 text-xs font-bold text-slate-600">Reddit — dovadă / context</div>
                     </a>
                 </div>
             </div>
@@ -1932,34 +1909,34 @@
 
             <div class="text-slate-600 text-sm font-bold leading-relaxed space-y-4">
                 <p>
-                    Am comparat canalele după: reach posibil, fricțiune (moderare), calitatea traficului și relevanță pentru segment.
+                    Am comparat canalele după: reach, fricțiune (moderare), calitatea traficului și relevanță pentru segment.
                 </p>
 
                 <div class="grid md:grid-cols-3 gap-4">
                     <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100">
-                        <p class="text-indigo-800 font-extrabold">Facebook groups</p>
+                        <p class="text-indigo-800 font-extrabold">Facebook</p>
                         <ul class="list-disc ml-5 mt-2 space-y-1 text-xs font-bold text-slate-700">
                             <li>Reach mare teoretic</li>
                             <li>Fricțiune: moderare / topic sensibil</li>
-                            <li>Bun pentru awareness, conversie inconsistentă</li>
+                            <li>Rezultat: inconsistent (depinde de grup / reguli)</li>
                         </ul>
                     </div>
 
                     <div class="bg-emerald-50 p-5 rounded-2xl border border-emerald-100">
                         <p class="text-emerald-800 font-extrabold">Reddit</p>
                         <ul class="list-disc ml-5 mt-2 space-y-1 text-xs font-bold text-slate-700">
-                            <li>Mai permisiv pentru MVP + feedback</li>
-                            <li>Trafic mai calitativ (utilizatori curioși)</li>
-                            <li>Foarte bun pentru validare</li>
+                            <li>Mai potrivit pentru feedback</li>
+                            <li>Discuții calitative și claritate pe problemă</li>
+                            <li>Rezultat: bun pentru validare + trafic interesat</li>
                         </ul>
                     </div>
 
                     <div class="bg-amber-50 p-5 rounded-2xl border border-amber-100">
-                        <p class="text-amber-800 font-extrabold">WhatsApp outreach</p>
+                        <p class="text-amber-800 font-extrabold">Outreach direct</p>
                         <ul class="list-disc ml-5 mt-2 space-y-1 text-xs font-bold text-slate-700">
-                            <li>Cel mai targetat pe terapeuți (supply-side)</li>
-                            <li>Rată de răspuns mai bună</li>
-                            <li>Cel mai eficient pentru recrutare terapeuți</li>
+                            <li>Cel mai targetat (trafic calificat)</li>
+                            <li>Conversie mai bună pe pași de produs (ex. matching)</li>
+                            <li>Rezultat: cel mai eficient pentru lead-uri “calde”</li>
                         </ul>
                     </div>
                 </div>
@@ -1967,9 +1944,8 @@
                 <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
                     <p class="font-extrabold text-slate-700">Concluzie:</p>
                     <p class="text-xs font-bold text-slate-600 mt-1">
-                        Pentru clienți, canalele publice (Reddit / Facebook) au fost utile pentru awareness și feedback,
-                        însă Facebook a avut fricțiune mare din moderare. Pentru terapeuți (în special juniori),
-                        outreach-ul pe WhatsApp a fost cel mai eficient datorită targetării.
+                        Reddit a fost cel mai bun canal pentru feedback și interes real (low friction), Facebook a avut fricțiune prin moderare,
+                        iar outreach-ul direct a fost cel mai eficient pentru trafic targetat și conversii pe acțiuni din produs.
                     </p>
                 </div>
             </div>
